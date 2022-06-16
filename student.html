@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+    <style>
+        #signup{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="show_up()">Sign Up</button>
+    <button onclick="show_in()">Sign In</button>
+    <div id="signup">
+        <form action="">
+            <label for="name">Full Name*</label>
+            <input type="text" id="name"><br>
+            <label for="mob">Mobile No.*</label>
+            <input type="text" id="mob"><br>
+            <label for="email">IITH Email Id*</label>
+            <input type="text" id="email"><br>
+            <label for="pw">Type Password*</label>
+            <input type="text" id="pw"><br>
+            <label for="re_pw">Re-type Password*</label>
+            <input type="text" id="re_pw"><br>
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
+    <div id="signin">
+        
+
+    </div>
+<script>
+    function show_up() {
+        document.getElementById("signup").style.display="block";
+    }
+    function show_in() {
+        document.getElementById("signin").style.display="block";
+    }
+</script>
+</body>
+
+</html>
