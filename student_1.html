@@ -9,13 +9,29 @@
 <body>
     <div>
     <h1>Hello User_Name!</h1>
-    <br/>
-    <p>Roll No: BBYY110XX</p>
+    <h2>Roll No: BBYY110XX</h2>
     </div>
-<p>Find your EV ride here</p>
+<h3>Find your EV ride here </h3>
 <form>
- <h3>From:</h3> 
-     <input type="text" placeholder="Starting Point" >
+ <label for = "Starting point" >From:</label>
+    <br>
+     <select name = "Starting point">
+       <option value = "Hostels">Hostels</option>
+       <option value = "Sampoorna">Sampoorna</option>
+       <option value = "Main gate">Main gate</option>
+     </select>
+     <br>
+     <br>
+ <label for ="Destination">To:</label>
+    <br>
+    <select name = "Destination point" id = "Destination">
+      <option value = "Hostels">Hostels</option>
+      <option value = "Sampoorna">Sampoorna</option>
+      <option value = "Main gate">Main gate</option>
+  </select>
+  <br>
+  <br>
+  <input type ="submit" value = "submit">
 </form>
 </body>
 </html>
