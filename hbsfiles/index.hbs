@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+#heading{
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left:42%;
+    color:rgb(218, 80, 11);
+    font-size:75px;
+
+}
+#signin{
+    left:170px;
+    border-radius: 20px;
+position: relative;
+margin-left: 260px;
+top:10%;
+font-size:30px;
+border: 3px solid rgb(228, 108, 204);
+   padding:10px;
+    /* padding:20px; */
+    flex-direction: row;
+    height:270px;
+    background-color:rgb(255 255 255 / 60%);
+    
+}
+#login{
+    position:relative;
+
+    text-align: right;
+    display:flex;
+    padding:5px;
+    margin-top:70px;
+   
+}
+    
+   /* body{ */
+    /* background-repeat: no-repeat;   
+    background-blend-mode:lighten; 
+    background-image: url('index1.jpg'); 
+    background-size: cover;
+    z-index:-1;
+    opacity:0.9; */
+
+/* } */
+  #Input{
+    height: 50px;}
+#tologin{
+    text-align:left;
+}
+.head{
+
+            font-size: 50px;
+            display:inline-block;
+            text-align: left;
+            display: block;
+            margin-left: 103px;
+            color: black;
+        }
+       
+img{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+}
+</style>
+
+</head>
+
+<body>
+    {{>headingout}}
+<img src="signin.jpeg" alt="nbdsifds"/>
+<div id="heading">
+    <p>TrakEV</p>
+</div>
+
+    <div id="login">
+    <div id="signin">
+    <div class="head"><b style="font-family: Roboto, serif; color:rgb(239 14 64 / 70%);">Sign In</b></div>
+    <form action="/signin" method="POST">
+        <div class="Input">
+        <label for="email_mobno">Email or Phone</label>
+        <input type="text" id="email_mobno" name="email_mobno" style="border: 2px solid black;  ;" placeholder =" IITH Email Id"><br>
+        </div>
+        <div class="Input">
+        <label for="pwc">Password</label>
+        <input type="password" id="pwc" name="pwc" placeholder ="Password" style="border: 2px solid black;"><br>
+        </div>          <select name="dvr_stu" id="dvr_stu">
+            <option value="student">Student</option>
+            <option value="driver">Driver</option>  
+        </select><br>
+        <div id="tologin">
+        <a href = "/signup.hbs">Haven't you sign up yet?</a>  
+        </div>
+        <div class="Input">
+        <input type="submit" value="Continue" style="text-align:center;">
+        </div>   
+    </form>
+    </div>
+
+    </div>

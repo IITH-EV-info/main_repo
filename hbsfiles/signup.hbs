@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+
+
+
+        #signup{
+
+  position: relative;
+  left: 0px;
+  bottom:50px;
+  border: 3px solid rgb(139, 177, 83);
+            align-items: right;
+            display: flex;
+            flex-direction: row;
+            padding:20px; 
+            margin:20px;
+            height:200px;
+            background-color:rgba(76, 145, 185, 0.7);
+            border-radius: 20px;
+        }
+        #signin{
+            border-radius: 20px;
+  position: relative;
+  left: 0px;
+  bottom:50px;
+  border: 3px solid rgb(228, 108, 204);
+           padding:10px;
+            /* padding:20px; */
+            flex-direction: row;
+            height:200px;
+            background-color:rgba(76, 145, 185, 1);
+        }
+        #login{
+            text-align: right;
+            display:flex;
+            padding:5px;
+            margin:50px;
+            
+           
+        }
+        .head{
+            font-size: 30px;
+            display:inline-block;
+            text-align: center;
+            
+           
+
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        body{
+
+            background-repeat: no-repeat;   
+            background-blend-mode:lighten; 
+            background-image: url("signup.jpeg");
+
+        }
+        /* .bg{
+            margin-top: 0px;
+           
+            /* height: 100vh;
+            width: 100vw;
+            background-blend-mode:lighten; 
+            background-image: url('index1.jpg');
+        padding:0px;} */
+        #Input{
+            height: 30px;
+        }
+      
+        </style>
+        
+</head>
+
+<body>
+
+<div class="bg"> 
+    
+    <h2 style=" color:rgb(17, 4, 114);font-size:50px; font-family:Arial, Helvetica, sans-serif;">TrakEV</h2>
+    <div class="container">
+        <div id="login">
+        <div id="signup">
+        <div class="head" ><b style="font-family: Roboto;color:rgb(255, 0, 251)">Sign Up</b></div>
+
+        <form action="/signup" method="POST"   >
+            <div class="Input">
+            <label for="name" style="color:rgb(238, 255, 0);" >Full Name</label>
+           
+            <input type="text" placeholder ="Enter Your Full Name" id="name" name="name" style="border: 2px solid black;" > <br>
+            </div>
+            <div class="Input">
+            <label for="mob" style="color:rgb(238, 255, 0);">Mobile No.</label>
+            <input type="tel"  placeholder ="Enter Your Mobile Number" id="mobno" name="mobno" style="border: 2px solid black;" ><br>
+            </div>
+            <div class="Input">
+            <label for="email" style="color:rgb(238, 255, 0);">IITH Email Id</label>
+            <input type="email" placeholder ="Enter Your IITH Email Id" id="email" name="email" style="border: 2px solid black;"><br>
+            </div>
+            <div class="Input">
+            <label for="pw" style="color:rgb(238, 255, 0);">Type Password</label>
+            <input type="password" placeholder ="Enter Your Password" id="pw" name="pw" style="border: 2px solid black;"><br>
+            </div>
+            <div class="Input">
+            <label for="re_pw" style="color:rgb(238, 255, 0);">Confirm Password</label>
+            <input type="text" placeholder ="Confirm Password" id="re_pw" name="re_pw" style="border: 2px solid black;"><br>
+            </div>
+            <select name="dvr_stu" id="dvr_stu" style="margin:3px;">
+                <option value="student">Student</option>
+                <option value="driver">Driver</option>
+            </select><br>
+            <input type="submit" value="Continue">
+        </form>
+        </div>
+    </div>
+    <!-- <div id="login">
+        <div id="signin">
+        <div class="head"><b style="font-family: Roboto, serif; color:rgba(66, 66, 249,0.7);">Sign In</b></div>
+        <form action="/signin" method="POST">
+            <div class="Input">
+            <label for="email_mobno">Email or Phone</label>
+            <input type="email" id="email_mobno" name="email_mobno" style="border: 2px solid black;  ;" placeholder =" IITH Email Id"><br>
+            </div>
+            <div class="Input">
+            <label for="pwc">Password</label>
+            <input type="password" id="pwc" name="pwc" placeholder ="Password" style="border: 2px solid black;"><br>
+            </div>          <select name="dvr_stu" id="dvr_stu">
+                <option value="student">Student</option>
+                <option value="driver">Driver</option>
+            </select><br>
+            
+            <div class="Input">
+            <input type="submit" value="Continue" style="text-align:center;">
+            </div>   
+        </form>
+        </div> -->
+
+        </div>
+    </div>
+
+</div>    
+
+</body>
+
+</html>
