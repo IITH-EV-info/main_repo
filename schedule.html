@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+
+<head>
+    <title>Vechile Schedule</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-blend-mode: lighten;
+            background-image: url("schedule.jpeg");
+            background-attachment: fixed;
+            background-size: cover;
+            z-index: -1;
+
+        }
+
+
+        table,
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+            border-radius: 5px;
+            height: 20px;
+        }
+        th{
+            color:rgb(139, 214, 28);
+        }
+        th,
+        td {
+            width: 140px;
+            border: 1px solid #000;
+        }
+
+        tr:nth-child(odd) {
+            background-color: rgba(232, 110, 34, 0.9);
+            margin: 3px;
+            height: 30px;
+        }
+
+
+        tr:nth-child(even) {
+            background-color: rgba(255, 136, 0, 0.847);
+            margin: 3px;
+            height: 30px;
+        }
+
+        .flex-child-element {
+            display: inline-block;
+
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+        }
+
+        .flex-parent-element {
+            display: flex;
+            width: 100%;
+
+        }
+
+        .container {
+            display: inline-block;
+            width:50%;
+            text-align:center;
+            margin-left: 40%;
+            margin-top:30px;
+            /* display: flex;
+            flex-direction: column;
+            flex-direction: row; */
+
+        }
+
+        .container div {
+            margin-left: 162px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       }
+       a {
+        text-decoration: none;
+       }
+       li {
+        list-style: none;
+       }
+        .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: rgb(231, 44, 206);
+        color:pink;
+       }
+       .nav-links a {
+        color: yellow;
+       }
+       /* LOGO */
+       .logo {
+        font-size: 32px;
+       }
+       /* NAVBAR MENU */
+       .menu {
+        display: flex;
+        gap: 1em;
+        font-size: 18px;
+       }
+       .menu li:hover {
+        background-color: rgb(11, 230, 242);
+        border-radius: 5px;
+        transition: 0.3s ease;
+       }
+       .menu li {
+        padding: 5px 14px;
+       }
+       </style>
+     
+     <nav class="navbar">
+            <!-- LOGO -->
+            <div class="logo"><b>TrakEV</div>
+            <h3 style="display:inline-block ;">Hello {{name}}</h1>
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+                <!-- NAVIGATION MENUS -->
+                <div class="menu">
+                    
+                    <li><a href="https://iithdashboard.com/"> Dashboard</a></li>
+                    <li><a href="schedule.html"> Schedule</a></li>
+                    <li><a href="https://iith.ac.in/">About IITH</a></li>
+                    
+                </div>
+            </ul>
+        </nav>
+    <div class="container">
+        <table>
+        <tr>
+            <th>IITH to Lab</th>
+            <th>Lab to IITH</th>
+        </tr>
+       <tr>
+        <td id="first">first</td>
+        <td id="third">third</td>
+       </tr>
+       <tr>
+        <td id="second">second</td>
+        <td id="fourth">fourth</td>
+       </tr>
+       </table>
+    </div>
+
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+    <div class="flex-parent-element">
+        <div class="flex-child-element magenta">
+            <table>
+                <tr>
+                    <th>IITH to Lab</th>
+                    <th>Lab to IITH</th>
+                </tr>
+                <tr>
+                    <td>07:15</td>
+                    <td>07:30</td>
+                </tr>
+                <tr>
+                    <td>07:30</td>
+                    <td>07:45</td>
+                </tr>
+                <tr>
+                    <td>07:45</td>
+                    <td>08:00</td>
+                </tr>
+                <tr>
+                    <td>08:00</td>
+                    <td>08:15</td>
+                </tr>
+                <tr>
+                    <td>08:15</td>
+                    <td>08:30</td>
+                </tr>
+                <tr>
+                    <td>08:30</td>
+                    <td>08:40</td>
+                </tr>
+                <tr>
+                    <td>08:40</td>
+                    <td>08:50</td>
+                </tr>
+                <tr>
+                    <td>08:50</td>
+                    <td>09:00</td>
+                </tr>
+                <tr>
+                    <td>09:00</td>
+                    <td>09:10</td>
+                </tr>
+                <tr>
+                    <td>09:10</td>
+                    <td>09:20</td>
+                </tr>
+                <tr>
+                    <td>09:20</td>
+                    <td>09:30</td>
+                </tr>
+
+            </table>
+        </div>
+        <div class="flex-child-element green">
+            <table>
+                <tr>
+                    <th>IITH to Lab</th>
+                    <th>Lab to IITH</th>
+                </tr>
+                <tr>
+                    <td>09:30</td>
+                    <td>09:40</td>
+                </tr>
+                <tr>
+                    <td>09:40</td>
+                    <td>09:50</td>
+                </tr>
+                <tr>
+                    <td>09:50</td>
+                    <td>10:00</td>
+                </tr>
+                <tr>
+                    <td>10:00</td>
+                    <td>10:10</td>
+                </tr>
+                <tr>
+                    <td>10:10</td>
+                    <td>10:20</td>
+                </tr>
+                <tr>
+                    <td>10:20</td>
+                    <td>10:30</td>
+                </tr>
+                <tr>
+                    <td>10:30</td>
+                    <td>10:45</td>
+                </tr>
+                <tr>
+                    <td>10:45</td>
+                    <td>11:00</td>
+                </tr>
+                <tr>
+                    <td>11:00</td>
+                    <td>11:15</td>
+                </tr>
+                <tr>
+                    <td>11:30</td>
+                    <td>11:40</td>
+                </tr>
+                <tr>
+                    <td>11:50</td>
+                    <td>12:00</td>
+                </tr>
+            </table>
+        </div>
+        <div class="flex-child-element blue">
+            <table>
+                <tr>
+                    <th>IITH to Lab</th>
+                    <th>Lab to IITH</th>
+                </tr>
+                <tr>
+                    <td>12:15</td>
+                    <td>12:30</td>
+                </tr>
+                <tr>
+                    <td>12:30</td>
+                    <td>12:40</td>
+                </tr>
+                <tr>
+                    <td>12:40</td>
+                    <td>12:50</td>
+                </tr>
+                <tr>
+                    <td>12:50</td>
+                    <td>13:00</td>
+                </tr>
+                <tr>
+                    <td>13:00</td>
+                    <td>13:10</td>
+                </tr>
+                <tr>
+                    <td>13:10</td>
+                    <td>13:20</td>
+                </tr>
+                <tr>
+                    <td>17:40</td>
+                    <td>17:50</td>
+                </tr>
+
+                <tr>
+                    <td>17:50</td>
+                    <td>18:00</td>
+                </tr>
+                <tr>
+                    <td>18:00</td>
+                    <td>18:10</td>
+                </tr>
+                <tr>
+                    <td>18:10</td>
+                    <td>18:20</td>
+                </tr>
+                <tr>
+                    <td>18:20</td>
+                    <td>18:30</td>
+                </tr>
+                
+            </table>
+        </div>
+        <div class="flex-child-element pink">
+            <table>
+                <tr>
+                    <th>IITH to Lab</th>
+                    <th>Lab to IITH</th>
+                </tr>
+                <tr>
+                    <td>18:30</td>
+                    <td>18:40</td>
+                </tr>
+                <tr>
+                    <td>18:40</td>
+                    <td>18:50</td>
+                </tr>
+                <tr>
+                    <td>18:50</td>
+                    <td>19:00</td>
+                </tr>
+                <tr>
+                    <td>19:00</td>
+                    <td>19:10</td>
+                </tr>
+                <tr>
+                    <td>19:10</td>
+                    <td>19:20</td>
+                </tr>
+                <tr>
+                    <td>19:20</td>
+                    <td>19:30</td>
+                </tr>
+                <tr>
+                    <td>19:30</td>
+                    <td>19:40</td>
+                </tr>
+                <tr>
+                    <td>19:40</td>
+                    <td>19:50</td>
+                </tr>
+            
+                <tr>
+                    <td>19:50</td>
+                    <td>20:00</td>
+                </tr>
+                <tr>
+                    <td>20:00</td>
+                    <td>20:10</td>
+                </tr>
+                <tr>
+                    <td>20:10</td>
+                    <td>20:20</td>
+                </tr>
+            </table>
+        </div>
+        <div class="flex-child-element yellow">
+            <table>
+                <tr>
+                    <th>IITH to Lab</th>
+                    <th>Lab to IITH</th>
+                </tr>
+                <tr>
+                    <td>20:20</td>
+                    <td>20:30</td>
+                </tr>
+                <tr>
+                    <td>20:30</td>
+                    <td>20:45</td>
+                </tr>
+                <tr>
+                    <td>20:45</td>
+                    <td>21:00</td>
+                </tr>
+                <tr>
+                    <td>21:00</td>
+                    <td>21:15</td>
+                </tr>
+                <tr>
+                    <td>21:30</td>
+                    <td>21:40</td>
+                </tr>
+                <tr>
+                    <td>21:50</td>
+                    <td>22:00</td>
+                </tr>
+                <tr>
+                    <td>22:15</td>
+                    <td>22:30</td>
+                </tr>
+                <tr>
+                    <td>22:30</td>
+                    <td>23:00</td>
+                </tr>
+                <tr>
+                    <td>23:00</td>
+                    <td>23:15</td>
+                </tr>
+                <tr>
+                    <td>23:15</td>
+                    <td>23:30</td>
+                </tr>
+                <tr>
+                    <td>23:30</td>
+                    <td>23:45</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="time.js"></script>
+    sc
+</body>
+
+</html>
