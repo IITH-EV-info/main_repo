@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   a {
+    text-decoration: none;
+   }
+   li {
+    list-style: none;
+   }
+    .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(228, 58, 32);
+    color:pink;
+   }
+   .nav-links a {
+    color: yellow;
+   }
+   /* LOGO */
+   .logo {
+    font-size: 32px;
+    display:inline-block;
+   }
+   #tag{
+    display:inline-block;
+    margin-left: 1cm
+   }
+   #user_name{
+    display:inline-flex;
+    margin-left: 11cm;
+    color: rgb(154, 224, 212);
+
+   }
+   /* NAVBAR MENU */
+   .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+   }
+   .menu li:hover {
+    background-color: rgb(11, 230, 242);
+    border-radius: 5px;
+    transition: 0.3s ease;
+   }
+   .menu li {
+    padding: 5px 14px;
+   }
+    #head{
+        left:45%;
+        padding-top: 60px;
+    }
+    .plot{
+        /* left:250px; */
+        width: 30vw;
+        background-color: rgba(226, 237, 229, 0.7);
+        margin-left: 575px;
+        margin-top: 200px;
+        text-align: center;
+        height: 288px;
+        border-radius: 53px;
+border: 6px solid rgb(20, 188, 210);
+}
+    
+    body{
+        
+        background-image: url("stu.jpg");
+        background-blend-mode:lighten; 
+        background-repeat: no-repeat; 
+        background-size:cover; 
+        height:100%; 
+
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo">
+            <div id ="tag"><b>TrakEV</div>
+            <div id="user_name">Hello, {{name}} !</div>
+        </div>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+            <!-- NAVIGATION MENUS -->
+            <div class="menu">
+                <li><a href="https://iithdashboard.com/"> Dashboard</a></li>
+                <li><a href="shedule.html"> Schedule</a></li>
+                <li><a href="https://iith.ac.in/">About IITH</a></li>
+                
+            </div>
+        </ul>
+    </nav>
+  
+<div class="plot">
+    <div id="head">
+    <!-- <h1 style="color:rgb(224, 19, 239)">Hello, {{name}} !</h1>
+    <h2 style="color:rgb(224, 19, 239)">Roll No: {{email}}</h2> -->
+    
+    {{#each str}}
+    <h3 >{{this}}</h3>
+    {{/each}}
+    <h3 style="font-size:20px;color:rgb(157, 0, 255)">Find your EV ride here: </h3>
+    </div>
+</div>
+</body>
+</html>
