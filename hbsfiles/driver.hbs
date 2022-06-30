@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Driver location update page</title>
+
+  <!DOCTYPE html>
+  <html>
+     <head>
+        <style>
+           body {
+              background-image: url("driver.jpg");
+              background-repeat: no-repeat;
+              background-size: cover;
+              height:100%;
+              width:100%;
+              background-blend-mode: lighten;
+              opacity: 0.9;
+           }
+           .name{
+color:brown;
+
+
+/*   
+  background-color: rgba(125, 119, 185, 0.3); */
+  /* Center vertically and horizontally */
+  position: absolute;
+  top: 10%;
+  left: 42%;
+  margin: -25px 0 0 -25px;
+  
+
+  
+
+
+           }
+           .pop{
+            
+  width: 400px;
+  height: 200px;
+  background-color: rgb(201, 193, 193);
+  /* Center vertically and horizontally */
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  margin: -25px 0 0 -25px;
+  border:4px solid green;
+  border-radius:30px;
+  
+
+           }
+           .vechile{
+            /* text-align:center; */
+            margin:5px;
+            padding:5px;
+
+           }
+
+
+
+
+
+        </style>
+     </head>
+  
+    
+  </html>
+</head>
+
+<body>
+  {{>headingin}}
+  <img src="driver.jpeg" alt="">
+    <div class="name">
+    
+    <h2 style="color:rgba(255,0,0,0.5);"><u>Hello, {{name}}</h2>
+  </div>
+  <div class="pop">
+    <form action="/update" method="POST">
+    <div class="vechile">
+    <label for="ev_name"><h3>Specify your vechile</h3></label>
+    <select name="ev_name" id="ev_name"  >
+      <option value="EV-1">EV-1</option>
+      <option value="EV-2">EV-2</option>
+      <option value="Bus-1">Bus-1</option>
+    </select><br>
+    
+    <label for="status"><h3>Please select your location</h3></label>
+    
+    <select name="status" id="status">
+      <option value="main_gate(started)">started from Main gate</option>
+      <option value="sampoorna(towards_hostels)">Sampoorna</option>
+      <option value="hostel(reached)">Reached Hostels</option>
+      <option value="hostel(started)">Started from Hostels</option>
+      <option value="sampoorna(towards_gate)">Sampoorna (returning to main gate)</option>
+      <option value="main_gate(reached)">Reached Main gate</option>
+    </select>
+    <input type="submit" value="Submit">
+    </form>
+</div>
+  </div>
+</div>
+
+
+</body>
+
+</html>
